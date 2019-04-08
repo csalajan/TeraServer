@@ -1,7 +1,7 @@
-#TeraServer
+# TeraServer
 A decorator based node JS web framework
 
-##Getting Started
+## Getting Started
 
 ```typescript
 import Server from 'tera-server';
