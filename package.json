@@ -1,0 +1,30 @@
+{
+  "name": "tera-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-ts": "tsc -w",
+    "build-ts": "tsc",
+    "build": "yarn build-ts && yarn tslint",
+    "watch": "yarn watch-ts && yarn tslint && node dist/server.js",
+    "start": "nodemon",
+    "tslint": "tslint -c tslint.json -[ tsconfig.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^11.13.0",
+    "nodemon": "^1.18.10",
+    "reflect-metadata": "^0.1.13",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.15.0",
+    "tslint-webpack-plugin": "^2.0.4",
+    "typescript": "^3.4.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
